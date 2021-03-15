@@ -20,7 +20,7 @@ public class ControllerClass {
 	String msg = "";
 	ServiceInterface service = new ServiceImpl();
 
-	@PostMapping("/insert")
+	@PostMapping("/insert_Record")
 	public ResponseEntity<String> insertRecord(@RequestBody Employee employee) {
 		msg = service.insertRecord(employee);
 
